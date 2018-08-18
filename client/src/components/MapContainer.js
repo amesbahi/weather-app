@@ -71,7 +71,7 @@ export class MapContainer extends Component {
                 }
             })
 
-        fetchJsonp(`https://api.darksky.net/forecast/07cc489c858826f3922d392cba90696a/${lat},${lng}`)
+        fetchJsonp(`https://api.darksky.net/forecast/e6601973c3dcbfa83f0a38899ca18b01/${lat},${lng}`)
             .then(function (response) {
                 return response.json()
             }).then((json) => {
@@ -114,5 +114,5 @@ export class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyDO89g96R8Xzzpkc9inSoWiQ74wStXDCWM'
+    apiKey: 'AIzaSyDSCJ4vf8bi2yi13XIk4yF9r3S_FTuxI_4'
 })(MapContainer)
