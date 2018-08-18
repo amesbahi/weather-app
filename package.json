@@ -1,0 +1,35 @@
+{
+    "name": "weather-app",
+    "version": "1.0.0",
+    "description": "A web app that tells you the weather",
+    "engines": {
+        "node": "8.4.0",
+        "npm": "5.6.0"
+    },
+    "scripts": {
+        "client": "cd client && yarn start",
+        "server": "nodemon server.js",
+        "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+        "heroku-postbuild": "cd client && npm install && npm run build"
+    },
+    "cacheDirectories": [
+        "node_modules",
+        "client/node_modules"
+    ],
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "cors": "^2.8.4",
+        "express": "^4.16.2",
+        "mongoose": "^5.2.7",
+        "morgan": "^1.9.0",
+        "nodemon": "^1.17.5"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/amesbahi/weather-app.git"
+    },
+    "devDependencies": {
+        "concurrently": "^3.5.0",
+        "yarn": "^1.7.0"
+    }
+}
