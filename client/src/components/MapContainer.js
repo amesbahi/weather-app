@@ -6,7 +6,7 @@ import WeatherDetails from './WeatherDetails'
 import Geocode from 'react-geocode'
 require('es6-promise').polyfill()
 
-Geocode.setApiKey(process.env.REACT_APP_GOOGLE_MAPS_KEY)
+Geocode.setApiKey('AIzaSyDSCJ4vf8bi2yi13XIk4yF9r3S_FTuxI_4')
 
 Geocode.enableDebug()
 
