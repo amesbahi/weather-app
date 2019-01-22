@@ -1,6 +1,7 @@
 # Simple Weather App
 
 ## Built using google-maps-react and the Dark Sky API
+App is live at https://td-weather-app.herokuapp.com/
 
 ### How to run the app
 
