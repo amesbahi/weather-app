@@ -1,5 +1,6 @@
 # Simple Weather App
 
+## Capstone project for the Treehouse Full Stack JavaScript Techdegree. 
 ## Built using google-maps-react and the Dark Sky API
 App is live at https://td-weather-app.herokuapp.com/
 
